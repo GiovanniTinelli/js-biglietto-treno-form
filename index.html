@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>biglietto treno</title>
+</head>
+<body>
+  <header></header>
+
+  <main>
+    <div class="container">
+      <h1 class="input-area">costo del biglietto</h1>
+
+      <!--DATI-->
+      <div class="row">
+        <div class="col">
+          <label for="name"> nome Cognome</label>
+          <input type="text" id="name" placeholder="passeggero">
+        </div>
+
+        <div class="col">
+          <label for="km">km da fare</label>
+          <input type="number" id="km" placeholder="km">
+        </div>
+
+        <div class="col">
+          <label for="fasciaEtà"> fascia età</label>
+          <select name="fasciaEta" id="fasciaEta">
+            <option value="">seleziona età</option>
+            <option value="minorenne">minorenne</option>
+            <option value="adulto">adulto</option>
+            <option value="senior">over 65</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <button id="genera" class="btn">genera</button>
+        </div>
+        <div class="col">
+          <button id="annulla" class="btn"> annulla</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!--biglietto-->
+    <div class="container">
+      <section class="ticket-area">
+        <h1 id="ticket-id">BIGLIETTO</h1>
+        <div class="ticket"></div>
+        <h2>Dettaglio</h2>
+        <div class="row">
+          <div class="col">
+            <div class="name-box">
+              <h3>Nome</h3>
+              <p id="outputName">test</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <table>
+              <thead>
+                <tr>
+                  <th>Offerta</th>
+                  <th>Carrozza</th>
+                  <th>Codice CP</th>
+                  <th>Prezzo biglietto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="outputOfferta">sconto</td>
+                  <td id="outputCarrozza">carrozza</td>
+                  <td id="outputCodice">554536</td>
+                  <td id="outputPrezzo">euro</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
